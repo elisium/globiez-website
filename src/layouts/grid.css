@@ -1,0 +1,15 @@
+:root {
+    --
+}
+
+.container {
+    width: 1200px;
+}
+
+.row {
+    display: flex;
+}
+
+.col-1-of-12 {
+    width: 76px;
+}
