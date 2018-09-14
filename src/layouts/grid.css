@@ -1,9 +1,11 @@
 :root {
-    --
+    --column-width: 76px;
+    --column-gap: 24px;
 }
 
 .container {
     width: 1200px;
+    margin: auto;
 }
 
 .row {
@@ -11,5 +13,13 @@
 }
 
 .col-1-of-12 {
-    width: 76px;
+    width: var(--column-width);
+}
+
+.col-4-of-12 {
+    width: calc(var(--column-width) * 4);
+}
+
+.col-8-of-12 {
+    width: calc(var(--column-width) * 8);
 }

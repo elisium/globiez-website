@@ -1,28 +1,28 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styles from './header.module.css';
+import logo from './globiez_logo.svg';
 console.log(styles);
 
 const Header = ({ siteTitle }) => (
-  <div className={styles.container}>
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+  <div className={styles.main}>
+    <div className="container">
+      <div className="row">
         <Link
           to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
+          className={styles.logo}
         >
-          {siteTitle}
+          <img src={logo} alt="Globiez Logo" />
         </Link>
-      </h1>
+        <nav className={styles.nav}>
+          <Link
+            to="/"
+            className={styles.nav_link}
+          >
+            Home
+        </Link>
+        </nav>
+      </div>
     </div>
   </div>
 )
