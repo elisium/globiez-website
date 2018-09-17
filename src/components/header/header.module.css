@@ -8,6 +8,10 @@
     overflow: hidden;
 }
 
+.flex {
+    display: flex;
+}
+
 .logo {
     display: block;
     width: 184px;

@@ -19,7 +19,7 @@ const Layout = ({ children, data }) => (
     >
       <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans" rel="stylesheet"></link>
     </Helmet>
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header />
     <Body>
       {children()}
     </Body>

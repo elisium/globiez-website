@@ -6,23 +6,21 @@ console.log(styles);
 
 const Header = ({ siteTitle }) => (
   <div className={styles.main}>
-    <div className="container">
-      <div className="row">
+    <div className={`container ${styles.flex}`}>
+      <Link
+        to="/"
+        className={styles.logo}
+      >
+        <img src={logo} alt="Globiez Logo" />
+      </Link>
+      <nav className={styles.nav}>
         <Link
           to="/"
-          className={styles.logo}
+          className={styles.nav_link}
         >
-          <img src={logo} alt="Globiez Logo" />
-        </Link>
-        <nav className={styles.nav}>
-          <Link
-            to="/"
-            className={styles.nav_link}
-          >
-            Home
-        </Link>
-        </nav>
-      </div>
+          Home
+      </Link>
+      </nav>
     </div>
   </div>
 )
