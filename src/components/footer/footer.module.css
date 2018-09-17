@@ -1,0 +1,16 @@
+@import '../../layouts/variables.css';
+@import '../../layouts/grid.css';
+
+:root {
+    --footer-image-width: 2030px;
+}
+
+.main {
+  height: 273px;
+  background-color: #42c8f4;
+  background-color: var(--bright-cyan);
+  background-image: url('./footer.svg');
+  background-repeat: no-repeat;
+  background-position-y: 102px;
+  background-position-x: calc(50% + var(--footer-image-width) / 2 - var(--container-width) / 2);
+}

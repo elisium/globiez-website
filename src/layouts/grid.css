@@ -1,10 +1,11 @@
 :root {
     --column-width: 76px;
     --column-gap: 24px;
+    --container-width: 1200px;
 }
 
 .container {
-    width: 1200px;
+    width: var(--container-width);
     margin: auto;
 }
 
@@ -12,12 +13,16 @@
     display: flex;
 }
 
+.col {
+    padding-left: var(--column-gap);
+}
+
 .col-1-of-12 {
     width: var(--column-width);
 }
 
 .col-4-of-12 {
-    width: calc(var(--column-width) * 4);
+    width: calc(var(--column-width) * 4 + var(--column-gap) * 3);
 }
 
 .col-8-of-12 {

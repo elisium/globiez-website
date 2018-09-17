@@ -1,7 +1,7 @@
 @import '../../layouts/variables.css';
 
 .main {
-    height: 80px;
+    height: 88px;
     border-bottom: 8px solid;
     border-color: #42c8f4;
     border-color: var(--bright-cyan);
