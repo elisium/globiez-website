@@ -1,3 +1,20 @@
-.right {
-  background-color: #eefafd;
+.tags {
+  display: flex;
+  margin: 6px 0 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 4px 8px 5px;
+  border-radius: 2px;
+  background-color: #fff;
+  margin: 0 8px 8px 0;
+}
+
+.vacancie {
+  margin-bottom: 16px;
+}
+
+.vacancie_header {
+  height: 48px;
 }

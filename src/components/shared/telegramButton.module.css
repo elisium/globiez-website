@@ -1,0 +1,11 @@
+@import '../layout/variables.css';
+
+.button {
+    display: inline-block;
+    padding: 8px 14px 9px;
+    border-radius: 2px;
+    background-color: #22d677;
+    background-color: var(--algae-green);
+    color: #fff;
+    text-decoration: none;
+}

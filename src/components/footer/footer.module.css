@@ -7,10 +7,38 @@
 
 .main {
   height: 273px;
+  padding-top: 24px;
   background-color: #42c8f4;
   background-color: var(--bright-cyan);
   background-image: url('./footer.svg');
   background-repeat: no-repeat;
   background-position-y: 102px;
   background-position-x: calc(50% + var(--footer-image-width) / 2 - var(--container-width) / 2);
+}
+
+.main p {
+  margin-top: 8px;
+}
+
+.left {
+  display: flex;
+}
+
+.left div {
+  margin-right: 8px;
+}
+
+.linkMail {
+  color: #333;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) { /* mobile landscape to to mobile portrait */
+  .right {
+    margin-top: 24px;
+  }
+
+  .main {
+    background-position-y: 137px;
+  }
 }

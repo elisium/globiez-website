@@ -1,3 +1,5 @@
+@import './variables.css';
+
 html {
   font-family: 'Noto Sans', sans-serif;
   font-size: 14px;
@@ -41,6 +43,8 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: #0186b8;
+  color: var(--teal-blue);
 }
 a:active,
 a:hover {
@@ -60,7 +64,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2.286em;
   margin: .67em 0;
 }
 mark {
@@ -197,7 +201,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #333;
   font-family: 'Noto Sans', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -220,18 +224,18 @@ img {
 h1 {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 32px;
+  margin-bottom: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
   color: inherit;
   font-family: 'Fjalla One', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
-  line-height: 1.1;
+  font-size: 2.286rem;
+  line-height: 40px;
 }
 h2 {
   margin-left: 0;
@@ -246,23 +250,24 @@ h2 {
   font-family: 'Fjalla One', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 1.714rem;
   line-height: 1.1;
 }
 h3 {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 16px;
+  margin-bottom: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: normal;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
+  font-style: italic;
+  font-size: 1.286rem;
   line-height: 1.1;
 }
 h4 {
@@ -370,12 +375,12 @@ dd {
 p {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 16px;
+  margin-bottom: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 figure {
   margin-left: 0;
@@ -609,9 +614,4 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: "";
-}
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
 }
