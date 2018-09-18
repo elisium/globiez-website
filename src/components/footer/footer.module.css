@@ -1,5 +1,5 @@
-@import '../../layouts/variables.css';
-@import '../../layouts/grid.css';
+@import '../layout/variables.css';
+@import '../layout/grid.css';
 
 :root {
     --footer-image-width: 2030px;
