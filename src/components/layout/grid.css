@@ -12,10 +12,11 @@
 .row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .row-nested {
-    margin-left: -var(--column-gap);
+    margin-left: calc(-1 * var(--column-gap));
 }
 
 .col {
