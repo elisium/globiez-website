@@ -13,5 +13,5 @@ collections:
     fields:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: tags, label: Labels }
+      - { name: tags, label: Labels (coma separated) }
       - { name: body, label: Body, widget: markdown }

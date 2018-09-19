@@ -1,10 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Link from 'gatsby-link';
 import Layout from '../components/layout';
 
 import styles from './styles/vacancies.module.css';
 
 const IndexPage = ({ data }) => {
+  console.log(data)
   return (
     <Layout>
       <div className="row">
@@ -12,7 +14,7 @@ const IndexPage = ({ data }) => {
           <h1>Vacancies</h1>
           <div className="row-nested">
             {data.allMarkdownRemark.edges.map(({ node }) => (
-              <h3 className={styles.vacancies_item} key={node.id}>{node.frontmatter.title}</h3>
+              <h3 className={styles.vacancies_item} key={node.id}><Link to={`/vacancies/${node.fields.path}`}>{node.frontmatter.title}</Link></h3>
             ))}
           </div>
         </aside>
@@ -26,11 +28,14 @@ export default IndexPage;
 
 export const query = graphql`
   query VacanciesQuery {
-    allMarkdownRemark(limit: 4) {
+    allMarkdownRemark {
       totalCount
       edges {
         node {
           id
+          fields {
+            path
+          }
           frontmatter {
             title
             date
