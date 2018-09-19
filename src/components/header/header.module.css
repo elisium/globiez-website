@@ -31,4 +31,10 @@
     text-transform: uppercase;
     color: #333333;
     color: var(--black);
+    margin-right: 40px;
+}
+
+.nav_link[aria-current="page"] {
+    color: #00adee;
+    color: var(--azure);
 }

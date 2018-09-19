@@ -19,7 +19,13 @@ const Header = ({ siteTitle }) => (
           className={styles.nav_link}
         >
           Home
-      </Link>
+        </Link>
+        <Link
+          to="/vacancies/"
+          className={styles.nav_link}
+        >
+          Vacancies
+        </Link>
       </nav>
     </div>
   </div>
