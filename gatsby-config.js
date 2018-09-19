@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Globiez',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -16,6 +16,7 @@ module.exports = {
       "options": {
         "excerpt_separator": `<!-- end -->`
       }
-    }
+    },
+    'gatsby-plugin-netlify-cms'
   ],
 }
