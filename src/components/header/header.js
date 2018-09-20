@@ -24,7 +24,7 @@ const Header = ({ currentPath }) => {
           <Link
             to="/vacancies/"
             className={classNames(styles.nav_link, {
-              [styles.active]: currentPath.search(/vacancies/) >= 0
+              [styles.active]: (currentPath || "").search(/vacancies/) >= 0
             })}
           >
             Vacancies
