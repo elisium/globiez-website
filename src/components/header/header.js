@@ -4,8 +4,7 @@ import styles from './header.module.css';
 import logo from './globiez_logo.svg';
 import classNames from "classnames";
 
-const Header = () => {
-  const { pathname } = window.location;
+const Header = ({ currentPath }) => {
   return (
     <div className={styles.main}>
       <div className={`container ${styles.flex}`}>
@@ -25,7 +24,7 @@ const Header = () => {
           <Link
             to="/vacancies/"
             className={classNames(styles.nav_link, {
-              [styles.active]: pathname.search(/vacancies/) >= 0
+              [styles.active]: currentPath.search(/vacancies/) >= 0
             })}
           >
             Vacancies

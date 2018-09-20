@@ -9,7 +9,7 @@ import Footer from '../footer/footer';
 import './index.css';
 import './grid.css';
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children, currentPath }) => (
   <StaticQuery
     query={graphql`
       query LayoutQuery {
@@ -31,7 +31,7 @@ const Layout = ({ children, data }) => (
         >
           <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans" rel="stylesheet"></link>
         </Helmet>
-        <Header />
+        <Header currentPath={currentPath} />
         <Body>
           {children}
         </Body>
