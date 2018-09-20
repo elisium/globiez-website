@@ -2,33 +2,38 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styles from './header.module.css';
 import logo from './globiez_logo.svg';
-console.log(styles);
+import classNames from "classnames";
 
-const Header = ({ siteTitle }) => (
-  <div className={styles.main}>
-    <div className={`container ${styles.flex}`}>
-      <Link
-        to="/"
-        className={styles.logo}
-      >
-        <img src={logo} alt="Globiez Logo" />
-      </Link>
-      <nav className={styles.nav}>
+const Header = () => {
+  const { pathname } = window.location;
+  return (
+    <div className={styles.main}>
+      <div className={`container ${styles.flex}`}>
         <Link
           to="/"
-          className={styles.nav_link}
+          className={styles.logo}
         >
-          Home
+          <img src={logo} alt="Globiez Logo" />
         </Link>
-        <Link
-          to="/vacancies/"
-          className={styles.nav_link}
-        >
-          Vacancies
-        </Link>
-      </nav>
+        <nav className={styles.nav}>
+          <Link
+            to="/"
+            className={styles.nav_link}
+          >
+            Home
+          </Link>
+          <Link
+            to="/vacancies/"
+            className={classNames(styles.nav_link, {
+              [styles.active]: pathname.search(/vacancies/) >= 0
+            })}
+          >
+            Vacancies
+          </Link>
+        </nav>
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default Header

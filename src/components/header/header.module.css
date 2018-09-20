@@ -34,7 +34,7 @@
     margin-right: 40px;
 }
 
-.nav_link[aria-current="page"] {
+.nav_link[aria-current="page"], .nav_link.active {
     color: #00adee;
     color: var(--azure);
 }

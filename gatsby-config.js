@@ -7,7 +7,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
+        name: `vacancies`,
         path: `${__dirname}/src/vacancies`,
       },
     },
@@ -26,6 +26,11 @@ module.exports = {
             name: 'path',
             selector: /.+\/([\w\_\-\.\d\s]+)\.md$/,
             replacer: '$1'
+          },
+          {
+            name: 'fullpath',
+            selector: /.+\/([\w\_\-\.\d\s]+)\.md$/,
+            replacer: '/vacancies/$1'
           }
         ]
       }
