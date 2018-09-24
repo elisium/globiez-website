@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
           <p><TelegramButton /></p>
         </aside>
         <div className="right-panel col col-8-of-12 col-4-of-8">
-          <h1>Vacancies {data.allMarkdownRemark.totalCount}</h1>
+          <h1>Vacancies</h1>
           <div className="row row-nested">
             {data.allMarkdownRemark.edges.map(({ node }) => (
                 <div className={`col col-4-of-12 col-4-of-8 ${styles.vacancie}`} key={node.id}>
@@ -54,7 +54,6 @@ export default IndexPage;
 export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(limit: 4) {
-      totalCount
       edges {
         node {
           id

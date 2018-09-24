@@ -6,7 +6,7 @@ import classNames from 'classnames';
 
 import styles from './styles/vacancies.module.css';
 
-const IndexPage = ({ data, location }) => {
+const VacanciesPage = ({ data, location }) => {
   const { allMarkdownRemark, markdownRemark } = data;
   const currentVacancie = markdownRemark ? markdownRemark : allMarkdownRemark.edges[0].node;
   currentVacancie.html = currentVacancie.html.replace(/(<\/?h)[1-6](>)/g, "$13$2"); // make sure all headings inside a vacancie are h3
@@ -46,7 +46,7 @@ const IndexPage = ({ data, location }) => {
     </Layout>
 )}
 
-export default IndexPage;
+export default VacanciesPage;
 
 export const vacancies = graphql`
   query($path: String!) {
