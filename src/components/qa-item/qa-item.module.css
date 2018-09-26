@@ -1,0 +1,30 @@
+.title {
+    padding-right: 32px;
+    position: relative;
+    cursor: pointer;
+}
+
+.title:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 24px;
+    height: 24px;
+    top: 0;
+    right: 0;
+    background: url(./more-is-less-down.svg) 50% 50% no-repeat;
+}
+
+.open .title:after {
+    background-image: url(./more-is-less-up.svg);
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all linear 300ms;
+}
+
+.open .answer {
+    max-height: 200px;
+}

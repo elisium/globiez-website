@@ -35,6 +35,18 @@ const Header = ({ currentPath }) => {
           >
             Q&A
           </Link>
+          <Link
+            to="/services"
+            className={styles.nav_link}
+          >
+            Services
+          </Link>
+          <Link
+            to="/contact"
+            className={styles.nav_link}
+          >
+            Contact
+          </Link>
         </nav>
       </div>
     </div>
