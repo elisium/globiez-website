@@ -7,3 +7,37 @@
 .current_vacancie {
     background-color: #eef9fd;
 }
+
+.form_entry {
+    padding-bottom: 8px;
+}
+
+.form_actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.form_file {
+    display: none;
+}
+
+.form_file_label {
+    display: inline-block;
+    color: #0186b8;
+    color: var(--teal-blue);
+    text-decoration: underline;
+    font-weight: normal;
+    cursor: pointer;
+}
+.form_file_label:hover {
+  color: #00adee;
+  color: var(--azure);
+}
+.form_file_label:active {
+  color: #00719b;
+}
+
+.form_send {
+    width: 135px;
+}

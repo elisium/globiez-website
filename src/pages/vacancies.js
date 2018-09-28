@@ -39,6 +39,32 @@ const VacanciesPage = ({ data, location }) => {
             </div>
             <div className="col col-4-of-12 col-4-of-8">
               <h3>Apply</h3>
+              <form name="application" method="POST" action="/form-success/vacancy" netlify>
+                <div className={styles.form_entry}>
+                  <label for="name">Full name</label>
+                  <input id="name" name="name" type="text" value="My name is " />
+                </div>
+                <div className={styles.form_entry}>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" />
+                </div>
+                <div className={styles.form_entry}>
+                  <label for="phoneSkype">Phone number or Skype ID (optional)</label>
+                  <input id="phoneSkype" name="phoneSkype" type="email" />
+                </div>
+                <div className={styles.form_actions}>
+                  <label for="cv" className={styles.form_file_label}>
+                    Attach a CV
+                  </label>
+                  <input className={styles.form_file} id="cv" name="cv" type="file" />
+                  <input className={`button ${styles.form_send}`} type="submit" value="Send Application" />
+                </div>
+                <input name="vacancie" type="hidden" value={currentVacancie.frontmatter.title} />
+              </form>
+              <h3>Share this vacancy on social media</h3>
+              <div className={styles.social_links}>
+                fb in tw
+              </div>
             </div>
           </div>
         </div>
