@@ -165,7 +165,7 @@ const Contact = ({ data, location }) => {
                                 </tbody>
                             </table>
                             <p>
-                                Download <a href="">White paper Globiez</a>
+                                Download <a href="http://globiez.com/">White paper Globiez</a>
                             </p>
                         </div>
                     </div>

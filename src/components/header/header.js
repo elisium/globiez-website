@@ -30,19 +30,19 @@ const Header = ({ currentPath }) => {
             Vacancies
           </Link>
           <Link
-            to="/qa"
+            to="/qa/"
             className={styles.nav_link}
           >
             Q&A
           </Link>
           <Link
-            to="/services"
+            to="/services/"
             className={styles.nav_link}
           >
             Services
           </Link>
           <Link
-            to="/contact"
+            to="/contact/"
             className={styles.nav_link}
           >
             Contact
