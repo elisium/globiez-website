@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
+import styles from './styles/services.module.css';
 
 const Services = ({ data, location }) => {
 
@@ -8,6 +9,27 @@ const Services = ({ data, location }) => {
             <div className="row">
                 <aside className="left-panel col col-4-of-12 col-4-of-8">
                     <h1>Query</h1>
+                    <form name="services" method="POST" action="/form-success/services" netlify="true">
+                        <div className={styles.form_entry}>
+                            <label htmlFor="query">I would like to know more</label>
+                            <textarea id="query" name="query"></textarea>
+                        </div>
+                        <div className={styles.form_entry}>
+                            <label htmlFor="name">Full name</label>
+                            <input id="name" name="name" type="text" defaultValue="My name is " />
+                        </div>
+                        <div className={styles.form_entry}>
+                            <label htmlFor="email">Email</label>
+                            <input id="email" name="email" type="email" />
+                        </div>
+                        <div className={styles.form_entry}>
+                            <label htmlFor="phoneSkype">Phone number or Skype ID (optional)</label>
+                            <input id="phoneSkype" name="phoneSkype" type="email" />
+                        </div>
+                        <div className={styles.form_actions}>
+                            <input className={`button ${styles.form_send}`} type="submit" value="Send Query" />
+                        </div>
+                    </form>
                 </aside>
                 <div className="right-panel col col-8-of-12 col-4-of-8">
                     <h1>Services</h1>

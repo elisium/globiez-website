@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Link from 'gatsby-link';
 import Layout from '../components/layout';
+import SocialIcons from '../components/shared/socialIcons';
 import classNames from 'classnames';
 
 import styles from './styles/vacancies.module.css';
@@ -39,21 +40,21 @@ const VacanciesPage = ({ data, location }) => {
             </div>
             <div className="col col-4-of-12 col-4-of-8">
               <h3>Apply</h3>
-              <form name="application" method="POST" action="/form-success/vacancy" netlify>
+              <form name="application" method="POST" action="/form-success/vacancy" netlify="true">
                 <div className={styles.form_entry}>
-                  <label for="name">Full name</label>
-                  <input id="name" name="name" type="text" value="My name is " />
+                  <label htmlFor="name">Full name</label>
+                  <input id="name" name="name" type="text" defaultValue="My name is " />
                 </div>
                 <div className={styles.form_entry}>
-                  <label for="email">Email</label>
+                  <label htmlFor="email">Email</label>
                   <input id="email" name="email" type="email" />
                 </div>
                 <div className={styles.form_entry}>
-                  <label for="phoneSkype">Phone number or Skype ID (optional)</label>
+                  <label htmlFor="phoneSkype">Phone number or Skype ID (optional)</label>
                   <input id="phoneSkype" name="phoneSkype" type="email" />
                 </div>
                 <div className={styles.form_actions}>
-                  <label for="cv" className={styles.form_file_label}>
+                  <label htmlFor="cv" className={styles.form_file_label}>
                     Attach a CV
                   </label>
                   <input className={styles.form_file} id="cv" name="cv" type="file" />
@@ -63,7 +64,11 @@ const VacanciesPage = ({ data, location }) => {
               </form>
               <h3>Share this vacancy on social media</h3>
               <div className={styles.social_links}>
-                fb in tw
+                <SocialIcons
+                  fb={`https://www.facebook.com/sharer/sharer.php?u=${location.href}`}
+                  ln={`https://www.linkedin.com/shareArticle?mini=true&url=${location.href}&title=${currentVacancie.frontmatter.title}&summary=&source=`}
+                  tw={`https://twitter.com/home?status=${location.href}`}
+                />
               </div>
             </div>
           </div>

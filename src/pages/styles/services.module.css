@@ -1,0 +1,13 @@
+.form_entry {
+    padding-bottom: 8px;
+}
+
+.form_actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.form_send {
+    width: 101px;
+}

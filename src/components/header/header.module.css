@@ -32,6 +32,7 @@
     color: #333333;
     color: var(--black);
     margin-right: 40px;
+    height: 18px;
 }
 
 .nav_link[aria-current="page"], .nav_link.active {
