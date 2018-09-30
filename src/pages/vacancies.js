@@ -41,7 +41,7 @@ const VacanciesPage = ({ data, location }) => {
             </div>
             <div className="col col-4-of-12 col-4-of-8">
               <h3>Apply</h3>
-              <form name="application" method="POST" action={`${location.href}#success`} netlify="true">
+              <form name="application" method="POST" action={`${currentPath}#success`} netlify="true">
                 <div className={styles.form_entry}>
                   <label htmlFor="name">Full name</label>
                   <input id="name" name="name" type="text" defaultValue="My name is " />
@@ -67,9 +67,9 @@ const VacanciesPage = ({ data, location }) => {
               <h3>Share this vacancy on social media</h3>
               <div className={styles.social_links}>
                 <SocialIcons
-                  fb={`https://www.facebook.com/sharer/sharer.php?u=${location.href}`}
-                  ln={`https://www.linkedin.com/shareArticle?mini=true&url=${location.href}&title=${currentVacancie.frontmatter.title}&summary=&source=`}
-                  tw={`https://twitter.com/home?status=${location.href}`}
+                  fb={`https://www.facebook.com/sharer/sharer.php?u=${currentPath}`}
+                  ln={`https://www.linkedin.com/shareArticle?mini=true&url=${currentPath}&title=${currentVacancie.frontmatter.title}&summary=&source=`}
+                  tw={`https://twitter.com/home?status=${currentPath}`}
                 />
               </div>
             </div>
