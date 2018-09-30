@@ -41,7 +41,9 @@ const VacanciesPage = ({ data, location }) => {
             </div>
             <div className="col col-4-of-12 col-4-of-8">
               <h3>Apply</h3>
-              <form name="application" method="POST" action={`${currentPath}#success`} netlify="true">
+              <form name="services" action="#success" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="services" />
                 <div className={styles.form_entry}>
                   <label htmlFor="name">Full name</label>
                   <input id="name" name="name" type="text" defaultValue="My name is " />

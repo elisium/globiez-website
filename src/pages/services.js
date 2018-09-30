@@ -9,7 +9,7 @@ const Services = ({ data, location }) => {
             <div className="row">
                 <aside className="left-panel col col-4-of-12 col-4-of-8">
                     <h1>Query</h1>
-                    <form name="services" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <form name="services" action="#success" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                         <input type="hidden" name="bot-field" />
                         <input type="hidden" name="form-name" value="services" />
                         <div className={styles.form_entry}>
