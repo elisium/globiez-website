@@ -11,6 +11,7 @@ const Services = ({ data, location }) => {
                     <h1>Query</h1>
                     <form name="services" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                         <input type="hidden" name="bot-field" />
+                        <input type="hidden" name="form-name" value={services} />
                         <div className={styles.form_entry}>
                             <label htmlFor="query">I would like to know more</label>
                             <textarea id="query" name="query"></textarea>
