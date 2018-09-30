@@ -60,7 +60,13 @@ const VacanciesPage = ({ data, location }) => {
                   <label htmlFor="cv" className={styles.form_file_label}>
                     Attach a CV
                   </label>
-                  <input className={styles.form_file} id="cv" name="cv" type="file" />
+                  <input
+                    className={styles.form_file}
+                    id="cv"
+                    name="cv"
+                    type="file"
+                    accept=".pdf,.doc,.docx,.md,.html,.odf"
+                  />
                   <input className={`button ${styles.form_send}`} type="submit" value="Send Application" />
                 </div>
                 <input name="vacancie" type="hidden" value={currentVacancie.frontmatter.title} />
