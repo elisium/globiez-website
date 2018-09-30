@@ -17,6 +17,7 @@
 
 .row-nested {
     margin-left: calc(-1 * var(--column-gap));
+    margin-bottom: 32px;
 }
 
 .col {

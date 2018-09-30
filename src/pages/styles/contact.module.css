@@ -1,0 +1,8 @@
+.sectionProcessItem {
+    display: flex;
+    align-items: center
+}
+
+.sectionProcessItem img {
+    margin-right: 16px;
+}

@@ -30,6 +30,7 @@ const Services = ({ data, location }) => {
                             <input className={`button ${styles.form_send}`} type="submit" value="Send Query" />
                         </div>
                     </form>
+                    {location.hash === "#success" && <h4>Success</h4>}
                 </aside>
                 <div className="right-panel col col-8-of-12 col-4-of-8">
                     <h1>Services</h1>

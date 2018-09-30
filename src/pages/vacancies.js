@@ -12,6 +12,7 @@ const VacanciesPage = ({ data, location }) => {
   const currentVacancie = markdownRemark ? markdownRemark : allMarkdownRemark.edges[0].node;
   currentVacancie.html = currentVacancie.html.replace(/(<\/?h)[1-6](>)/g, "$13$2"); // make sure all headings inside a vacancie are h3
   const currentPath = currentVacancie.fields.fullpath;
+  console.log(location);
 
   return (
     <Layout currentPath={currentPath}>
@@ -40,7 +41,7 @@ const VacanciesPage = ({ data, location }) => {
             </div>
             <div className="col col-4-of-12 col-4-of-8">
               <h3>Apply</h3>
-              <form name="application" method="POST" action="/form-success/vacancy" netlify="true">
+              <form name="application" method="POST" action={`${location.href}#success`} netlify="true">
                 <div className={styles.form_entry}>
                   <label htmlFor="name">Full name</label>
                   <input id="name" name="name" type="text" defaultValue="My name is " />
@@ -62,6 +63,7 @@ const VacanciesPage = ({ data, location }) => {
                 </div>
                 <input name="vacancie" type="hidden" value={currentVacancie.frontmatter.title} />
               </form>
+              {location.hash === "#success" && <h4>Success</h4>}
               <h3>Share this vacancy on social media</h3>
               <div className={styles.social_links}>
                 <SocialIcons
