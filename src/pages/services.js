@@ -9,7 +9,7 @@ const Services = ({ data, location }) => {
             <div className="row">
                 <aside className="left-panel col col-4-of-12 col-4-of-8">
                     <h1>Query</h1>
-                    <form name="services" method="POST" action="/services#success" netlify="true">
+                    <form name="services" method="POST" netlify="true">
                         <div className={styles.form_entry}>
                             <label htmlFor="query">I would like to know more</label>
                             <textarea id="query" name="query"></textarea>
