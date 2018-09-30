@@ -41,7 +41,7 @@ const VacanciesPage = ({ data, location }) => {
             </div>
             <div className="col col-4-of-12 col-4-of-8">
               <h3>Apply</h3>
-              <form name="application" method="POST" action={`${currentPath}#success`} data-netlify="true" data-netlify-honeypot="bot-field">
+              {location.hash !== "#success" && <form name="application" method="POST" action={`${currentPath}#success`} data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="application" />
                 <div className={styles.form_entry}>
@@ -70,8 +70,8 @@ const VacanciesPage = ({ data, location }) => {
                   <input className={`button ${styles.form_send}`} type="submit" value="Send Application" />
                 </div>
                 <input name="vacancie" type="hidden" value={currentVacancie.frontmatter.title} />
-              </form>
-              {location.hash === "#success" && <h4>Success</h4>}
+              </form>}
+              {location.hash === "#success" && <h3>Thank you for your submission, we will contact you soon.</h3>}
               <h3>Share this vacancy on social media</h3>
               <div className={styles.social_links}>
                 <SocialIcons
