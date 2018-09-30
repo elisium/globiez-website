@@ -43,7 +43,7 @@ const VacanciesPage = ({ data, location }) => {
               <h3>Apply</h3>
               <form name="application" method="POST" action={`${currentPath}#success`} data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="bot-field" />
-                <input type="hidden" name="form-name" value="services" />
+                <input type="hidden" name="form-name" value="application" />
                 <div className={styles.form_entry}>
                   <label htmlFor="name">Full name</label>
                   <input id="name" name="name" type="text" defaultValue="My name is " />
@@ -54,7 +54,7 @@ const VacanciesPage = ({ data, location }) => {
                 </div>
                 <div className={styles.form_entry}>
                   <label htmlFor="phoneSkype">Phone number or Skype ID (optional)</label>
-                  <input id="phoneSkype" name="phoneSkype" type="email" />
+                  <input id="phoneSkype" name="phoneSkype" type="text" />
                 </div>
                 <div className={styles.form_actions}>
                   <label htmlFor="cv" className={styles.form_file_label}>

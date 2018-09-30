@@ -26,7 +26,7 @@ const Services = ({ data, location }) => {
                         </div>
                         <div className={styles.form_entry}>
                             <label htmlFor="phoneSkype">Phone number or Skype ID (optional)</label>
-                            <input id="phoneSkype" name="phoneSkype" type="email" />
+                            <input id="phoneSkype" name="phoneSkype" type="text" />
                         </div>
                         <div className={styles.form_actions}>
                             <input className={`button ${styles.form_send}`} type="submit" value="Send Query" />
