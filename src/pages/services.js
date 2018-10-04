@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Layout from '../components/layout';
 import styles from './styles/services.module.css';
+import confirmation_icon from '../pages/icons/icon-confirmation.svg';
 
 const Services = ({ data, location }) => {
 
@@ -8,8 +9,9 @@ const Services = ({ data, location }) => {
         <Layout>
             <div className="row">
                 <aside className="left-panel col col-4-of-12 col-4-of-8">
+                    {location.hash !== "#success" && <Fragment>
                     <h1>Query</h1>
-                    {location.hash !== "#success" && <form name="services" action="/services/#success" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <form name="services" action="/services/#success" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                         <input type="hidden" name="bot-field" />
                         <input type="hidden" name="form-name" value="services" />
                         <div className={styles.form_entry}>
@@ -31,8 +33,15 @@ const Services = ({ data, location }) => {
                         <div className={styles.form_actions}>
                             <input className={`button ${styles.form_send}`} type="submit" value="Send Query" />
                         </div>
-                    </form>}
-                    {location.hash === "#success" && <h3>Thank you for your submission, we will contact you soon.</h3>}
+                    </form>
+                    </Fragment>}
+                    {location.hash === "#success" && <Fragment>
+                        <h1>Thank you for reaching out!</h1>
+                        <h3>We received your request.</h3>
+                        <p className={styles.successIcon}><img src={confirmation_icon} alt="Opened envelope with letter and a checkmark" /></p>
+                        <p>Someone of our colleagues is going to look into it.</p>
+                        <p>Feel free to ask any additional questions via <a href="mailto:hello@globiez.com">hello@globiez.com</a>.</p>
+                    </Fragment>}
                 </aside>
                 <div className="right-panel col col-8-of-12 col-4-of-8">
                     <h1>Services</h1>

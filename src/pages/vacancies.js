@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
 import Link from 'gatsby-link';
 import Layout from '../components/layout';
@@ -6,6 +6,7 @@ import SocialIcons from '../components/shared/socialIcons';
 import classNames from 'classnames';
 
 import styles from './styles/vacancies.module.css';
+import confirmation_icon from '../pages/icons/icon-confirmation.svg';
 
 const VacanciesPage = ({ data, location }) => {
   const { allMarkdownRemark, markdownRemark } = data;
@@ -40,8 +41,15 @@ const VacanciesPage = ({ data, location }) => {
               <div dangerouslySetInnerHTML={{ __html: currentVacancie.html }} />
             </div>
             <div className="col col-4-of-12 col-4-of-8">
+              {location.hash !== "#success" && <Fragment>
               <h3>Apply</h3>
-              {location.hash !== "#success" && <form name="application" method="POST" action={`${currentPath}#success`} data-netlify="true" data-netlify-honeypot="bot-field">
+              <form
+                name="application"
+                method="POST"
+                action={`${currentPath}#success`}
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+              >
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="application" />
                 <div className={styles.form_entry}>
@@ -70,8 +78,15 @@ const VacanciesPage = ({ data, location }) => {
                   <input className={`button ${styles.form_send}`} type="submit" value="Send Application" />
                 </div>
                 <input name="vacancie" type="hidden" value={currentVacancie.frontmatter.title} />
-              </form>}
-              {location.hash === "#success" && <h3>Thank you for your submission, we will contact you soon.</h3>}
+              </form>
+              </Fragment>}
+              {location.hash === "#success" && <Fragment>
+                <h3>Thank you for reaching out!</h3>
+                <h3>We received your application.</h3>
+                <p className={styles.successIcon}><img src={confirmation_icon} alt="Opened envelope with letter and a checkmark" /></p>
+                <p>Someone of our colleagues is going to look into it.</p>
+                <p>Feel free to ask any additional questions via <a href="mailto:hello@globiez.com">hello@globiez.com</a>.</p>
+              </Fragment>}
               <h3>Share this vacancy on social media</h3>
               <div className={styles.social_links}>
                 <SocialIcons
