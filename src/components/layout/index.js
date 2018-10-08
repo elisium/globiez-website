@@ -6,6 +6,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from '../header/header';
 import Body from '../body/body';
 import Footer from '../footer/footer';
+import Cookies from '../cookies/cookies';
 import './index.css';
 import './grid.css';
 
@@ -36,6 +37,7 @@ const Layout = ({ children, currentPath }) => (
           {children}
         </Body>
         <Footer />
+        <Cookies />
       </Fragment>
     )}
   />

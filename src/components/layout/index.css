@@ -674,6 +674,7 @@ input:focus, textarea:focus {
     text-decoration: none;
     transition: all linear 100ms;
     border: none;
+    cursor: pointer;
 }
 
 .button:hover {
