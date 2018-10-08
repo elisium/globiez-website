@@ -5,10 +5,7 @@ import logo from './globiez_logo.svg';
 import menu from './icon-menu.svg';
 import classNames from "classnames";
 
-class Header extends Component { 
-  state = {
-    opened: false
-  }
+class Header extends Component {
 
   render() {
     const { currentPath } = this.props;
