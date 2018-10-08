@@ -1,6 +1,6 @@
 ---
 date: '2017-08-10'
-title: Senior Test Automation Engineer – Amstelveen
+title: Senior Test Automation Engineer – Amstelveen (Netherlands)
 tags: 7+ years of experience
 ---
 ### The organization
