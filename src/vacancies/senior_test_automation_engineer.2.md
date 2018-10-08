@@ -1,23 +1,47 @@
 ---
-title: "Senior Test Automation Engineer – Amstelveen"
-date: "2017-08-10"
-tags: Senior (5-10 years), 7+ years of experience
+date: '2017-08-10'
+title: Penetration Tester (Medior/ Senior)
+tags: Amsterdam (The Netherlands)
 ---
+### The organization
 
-### Job Description
+Are you the person who can prevent digital attacks at companies and expose vulnerabilities? Then we are looking for you to strengthen our clients team. The client is an international bank based in Amsterdam.
+The team has the important task to make the bank more resilient against all kind of digital attacks. With the experienced team you test networks, applications and systems through penetration tests. In order to expand the team and share knowledge, we are looking for medior and  senior professionals.
 
-Do you like to automate application testing rather than doing it manually?
-The best possible customer experience starts with ensuring the quality of our software. And that is your task,  you have a vision on the implementation of test automation and you help to shape the strategy for the whole department. You enjoy coding and scripting, are not afraid to try new technologies and support colleagues to best implement Continuous Integration and Continuous Delivery.
+### Work experience and knowledge:
 
-At Knab we are looking to speed up software delivery, the aim is to have all tests triggered automatically. That’s where you come into play, we need your help to set-up automated test and integrate them in our CICD pipeline. Providing feedback to the development team as soon as possible.
+* At least BSc. level thinking and work experience
+* Preferably OSCP, ECSPPT certification
+* Minimum 2 years penetration test experience, pre is mobile testing
+* Experience with Code reviewing
+* Fluent in at least 1 programming language, Java or C++
+* Experience with test programs for web application penetration or at least one commercial solution (WebInspect, AppScan or similar)
+*  Experience with the implementation of solutions for enterprise security testing
+* Known with general network problems / penetration tests
+* Experience with various debuggers
+* Pre, experience with the testing of automation types such as Selenium or UFT or similar Experience with cryptography, X509 certificates, signatures, security of TLS / SSL parameters and certification
+* We ask technical people who can go into depth for example in: LAMP stack, Node.js, Scala / Java, iOS, Android OS, Windows Mobile, web services or similar
+* Rationale: verbal clarity in the security area
 
-### What you can expect from us
+### Personal attributes:
 
-The right laptop for you. Do you prefer MacOS, Windows or Linux? You choose.
-26 holidays. And you can buy more holidays if you promise to come back.
-Money. If you are the perfect candidate, we expect that you earn a yearly salary of approx 49K EUR at medior-level or 57K EUR at senior-level. We also provide a mobile phone, public transport card and contribute to your pension scheme.
+Communicate communication skills and organizational, solutions that can carefully balance business, risk, compliance and technical concerns.
 
-### Contact person
+### Salary and compensation
 
-Jacco Valkenburg
-The Hague Area, Netherlands
+We believe that top people deserve to be compensated accordingly! A regular job or contracting is both possible.
+
+If you think we are talking about you and that this is the challenge and opportunity you are looking for, then please apply! Candidates with an EU passport are preferred, but if you don’t, please also contact us.
+
+### Open for
+
+If you think we are talking about you and that this is the challenge and opportunity you are looking for, then please apply! Candidates with an EU passport are preferred, but if you don’t, please also contact us.
+
+Please send us the following details for your application:
+
+* CV with photo (holiday picture is fine)
+* Short motivation
+* Availability
+* Any planned holidays
+
+Please send it to hello@globiez.com.
