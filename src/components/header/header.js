@@ -12,9 +12,10 @@ class Header extends Component {
     return (
       <div className={styles.main}>
         <div className={`container ${styles.flex}`}>
-          <button className={styles.menuButton}>
+          <label for="menu-toggle" className={styles.menuButton}>
             <img src={menu} alt="Menu button icon" />
-          </button>
+          </label>
+          <input type="checkbox" name="menu-toggle" id="menu-toggle" className={styles.checkbox} />
           <Link
             to="/"
             className={styles.logo}

@@ -55,6 +55,10 @@
     outline: none;
 }
 
+.checkbox {
+    display: none;
+}
+
 @media (max-width: 640px) { /* mobile landscape to to mobile portrait */
     .menuButton {
         display: block;
@@ -76,7 +80,7 @@
         overflow: hidden;
     }
 
-    .menuButton:focus ~ .nav {
+    .checkbox:checked ~ .nav {
         max-height: 500px;
     }
 
