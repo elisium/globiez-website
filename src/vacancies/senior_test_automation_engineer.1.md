@@ -22,15 +22,20 @@ Quality and learning are two critically important parts of our DNA, we have embe
 
 ### Work experience and knowledge:
 * 7+ Years of work experience with software testing/QA Deep understanding and application of test strategies 
-* ISTQB/TMap certified* Deep understanding and application of test strategies
+* ISTQB/TMap certified
+* Deep understanding and application of test strategies
 * Experience in testing mobile and web applications
 * Experience in automating UI, API and mobile test scenarios
 * Experience with implementing BDD using Cucumber, Gherkin, Selenium in Java
-* Experience with working on GitLab, Jira, Android Studio, RoboMongo, MySQL(or SQL queries), Postman* Experience with SorceTree/GitCola or similar tools
+* Experience with working on GitLab, Jira, Android Studio, RoboMongo, MySQL(or SQL queries), Postman
+* Experience with SorceTree/GitCola or similar tools
 * Experience with REST, JSON* Debugging Tools (Chrome Dev Tools, Firebug, etc.)
-* Experience with Maven and Gradle project setup* Software design knowledge and experience in OOP
-* Experience with the Agile working methods* Experience with handling CI/CD pipeline on GitLab/Jenkins
-* Expertise with documenting tools like MarkDown* Exploring logs from iOS Console, Android Studio
+* Experience with Maven and Gradle project setup
+* Software design knowledge and experience in OOP
+* Experience with the Agile working methods
+* Experience with handling CI/CD pipeline on GitLab/Jenkins
+* Expertise with documenting tools like MarkDown
+* Exploring logs from iOS Console, Android Studio
 * Experience with XCode, Appium 
 * Experience with non-functional testing* Experience with Docker
 
