@@ -65,6 +65,13 @@ a:focus {
   box-shadow: none;
   outline: none;
 }
+a[href^="mailto:"],
+a[href^="mailto:"]:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;

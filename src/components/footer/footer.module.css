@@ -28,11 +28,6 @@
   margin-right: 8px;
 }
 
-.linkMail {
-  color: #333;
-  text-decoration: none;
-}
-
 @media (max-width: 640px) { /* mobile landscape to to mobile portrait */
   .right {
     margin-top: 8px;

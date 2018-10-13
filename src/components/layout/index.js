@@ -30,7 +30,7 @@ const Layout = ({ children, currentPath }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
-          <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans:400,400i,700" rel="stylesheet"></link>
         </Helmet>
         <Header currentPath={currentPath} />
         <Body>

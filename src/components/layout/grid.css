@@ -11,7 +11,6 @@
 
 .row {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -30,6 +29,11 @@
 
 .col-4-of-12 {
     width: calc(var(--column-width) * 4 + var(--column-gap) * 3);
+    margin-right: var(--column-gap);
+}
+
+.row-nested .col-4-of-12:nth-child(2n) {
+    margin-right: 0;
 }
 
 .col-8-of-12 {
