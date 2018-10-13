@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Link from 'gatsby-link';
 import Layout from '../components/layout';
 import TelegramButton from '../components/shared/telegramButton';
 import styles from './styles/index.module.css';
@@ -36,7 +37,11 @@ const IndexPage = ({ data }) => {
           <div className="row row-nested">
             {data.allMarkdownRemark.edges.map(({ node }) => (
                 <div className={`col col-4-of-12 col-4-of-8 ${styles.vacancie}`} key={node.id}>
-                  <h3 className={styles.vacancie_header}>{node.frontmatter.title}</h3>
+                  <h3 className={styles.vacancie_header}>
+                  <Link to={node.fields.fullpath}>
+                      {node.frontmatter.title}
+                    </Link>
+                  </h3>
                   <div className={styles.tags}>
                     {node.frontmatter.tags.split(", ").map(tag => <div className={styles.tag} key={tag}>{tag}</div>)}
                   </div>
@@ -61,6 +66,9 @@ export const query = graphql`
             title
             date
             tags
+          }
+          fields {
+            fullpath
           }
           html
         }

@@ -1,3 +1,15 @@
+.vacancieTitle {
+    margin-bottom: 3px;
+}
+
+.vacancieContent  p {
+    margin-top: 9px;
+}
+
+.vacancieContent h3 {
+    margin-top: 29px;
+}
+
 .vacancies_item {
     padding: 16px 24px;
     margin-bottom: 8px;
@@ -29,6 +41,7 @@
     text-decoration: underline;
     font-weight: normal;
     cursor: pointer;
+    margin-top: 0;
 }
 .form_file_label:hover {
   color: #00adee;
@@ -48,4 +61,8 @@
 
 .successIcon {
     text-align: center;
+}
+
+.vacancieContent .shareTitle {
+    margin-top: 37px;
 }

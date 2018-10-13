@@ -6,3 +6,26 @@
 .sectionProcessItem img {
     margin-right: 16px;
 }
+
+.table {
+    margin-top: 1px;
+}
+
+.table tr {
+    border: none;
+}
+
+.table td {
+    text-align: left;
+    font-weight: bold;
+    border: none;
+    padding: 6px 0 9px;
+}
+
+.table td:first-child {
+    width: 72%;
+}
+
+.table td:last-child {
+    text-align: right;
+}

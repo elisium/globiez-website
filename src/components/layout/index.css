@@ -70,6 +70,15 @@ a[href^="mailto:"]:hover {
   color: #333;
   text-decoration: none;
 }
+h3 a {
+  color: #333;
+  text-decoration: none;
+}
+h3 a:hover {
+  color: #00adee;
+  color: var(--azure);
+  text-decoration: underline;
+}
 
 
 abbr[title] {
@@ -273,7 +282,7 @@ h2 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.714rem;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 h3 {
   margin-left: 0;
@@ -351,9 +360,9 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
-  margin-left: 1.45rem;
+  margin-left: 28px;
   margin-right: 0;
-  margin-top: 8px;
+  margin-top: 13px;
   margin-bottom: 0;
   padding-bottom: 8px;
   padding-left: 0;
@@ -537,7 +546,7 @@ ol li {
   padding-left: 0;
 }
 ul li {
-  padding-left: 0;
+  padding-left: 10px;
 }
 li > ol {
   margin-left: 1.45rem;

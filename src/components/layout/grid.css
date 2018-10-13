@@ -16,7 +16,6 @@
 
 .row-nested {
     margin-left: calc(-1 * var(--column-gap));
-    margin-bottom: 32px;
 }
 
 .col {
@@ -46,7 +45,7 @@
 
 .right-panel {
   background-color: #eefafd;
-  padding-bottom: 8px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 1200px) { /* tablet 9" landscape to desctop */

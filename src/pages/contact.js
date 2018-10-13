@@ -29,7 +29,7 @@ const Contact = ({ data, location }) => {
                         Tel: +31 (0) 6 13387979
                     </p>
                     <p>
-                        Please contact us at hello@globiez.com or on social media.
+                        Please contact us at <a href="mailto:hello@globiez.com">hello@globiez.com</a> or on social media.
                     </p>
                     <SocialIcons
                         fb="https://www.facebook.com/Globiez/"
@@ -129,7 +129,7 @@ const Contact = ({ data, location }) => {
                                 In the following table you see types of investment which differ by a percentage of the annual
                                 gross salary and a number of payments.
                             </p>
-                            <table>
+                            <table className={styles.table}>
                                 <thead>
                                     <tr>
                                         <td />

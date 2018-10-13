@@ -33,10 +33,10 @@ const VacanciesPage = ({ data, location }) => {
         <div className="right-panel col col-8-of-12 col-4-of-8">
           <div className="row row-nested">
             <div className="col col-4-of-12 col-4-of-8">
-              <h2>{currentVacancie.frontmatter.title}</h2>
+              <h2 className={styles.vacancieTitle}>{currentVacancie.frontmatter.title}</h2>
             </div>
           </div>
-          <div className="row row-nested">
+          <div className={`row row-nested ${styles.vacancieContent}`}>
             <div className="col col-4-of-12 col-4-of-8">
               <div dangerouslySetInnerHTML={{ __html: currentVacancie.html }} />
             </div>
@@ -57,7 +57,7 @@ const VacanciesPage = ({ data, location }) => {
                   <input id="name" name="name" type="text" defaultValue="My name is " />
                 </div>
                 <div className={styles.form_entry}>
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email">Email address</label>
                   <input id="email" name="email" type="email" />
                 </div>
                 <div className={styles.form_entry}>
@@ -87,12 +87,12 @@ const VacanciesPage = ({ data, location }) => {
                 <p>Someone of our colleagues is going to look into it.</p>
                 <p>Feel free to ask any additional questions via <a href="mailto:hello@globiez.com">hello@globiez.com</a>.</p>
               </Fragment>}
-              <h3>Share this vacancy on social media</h3>
+              <h3 className={styles.shareTitle}>Share this vacancy on social media</h3>
               <div className={styles.social_links}>
                 <SocialIcons
-                  fb={`https://www.facebook.com/sharer/sharer.php?u=${currentPath}`}
-                  ln={`https://www.linkedin.com/shareArticle?mini=true&url=${currentPath}&title=${currentVacancie.frontmatter.title}&summary=&source=`}
-                  tw={`https://twitter.com/home?status=${currentPath}`}
+                  fb={`https://www.facebook.com/sharer/sharer.php?u=https://globiez.com${currentPath}`}
+                  ln={`https://www.linkedin.com/shareArticle?mini=true&url=https://globiez.com${currentPath}&title=${currentVacancie.frontmatter.title}&summary=&source=`}
+                  tw={`https://twitter.com/home?status=https://globiez.com${currentPath}`}
                 />
               </div>
             </div>

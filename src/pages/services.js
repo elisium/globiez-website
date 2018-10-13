@@ -23,7 +23,7 @@ const Services = ({ data, location }) => {
                             <input id="name" name="name" type="text" defaultValue="My name is " />
                         </div>
                         <div className={styles.form_entry}>
-                            <label htmlFor="email">Email</label>
+                            <label htmlFor="email">Email address</label>
                             <input id="email" name="email" type="email" />
                         </div>
                         <div className={styles.form_entry}>
