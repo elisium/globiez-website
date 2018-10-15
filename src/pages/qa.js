@@ -14,7 +14,7 @@ const QAPage = ({ data, location }) => {
                     <h1>Community</h1>
                     <p>We are those who already been through the process of finding a job in the Netherlands and who is seeking some advice.
                          Feel free to reach us out!</p>
-                    <p className={styles.facebook}><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Follow us on Facebook</a></p>
+                    <p className={styles.facebook}><a href="https://facebook.com/Globiez/" target="_blank" rel="noopener noreferrer">Follow us on Facebook</a></p>
                     <p>Our group on Telegram keeps growing.</p>
                     <p><TelegramButton /></p>
                 </aside>

@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
           <h1>About us</h1>
           <p>There’re fresh vacancies every month.</p>
           <p>Make sure you've read Writing a comprehensive résumé article.</p>
-          <p className={styles.facebook}><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Follow us on Facebook</a></p>
+          <p className={styles.facebook}><a href="https://facebook.com/Globiez/" target="_blank" rel="noopener noreferrer">Follow us on Facebook</a></p>
           <h1>Fresh updates are here!</h1>
           <p>We post the most recent vacancies in our Facebook group and in the Telegram channel.</p>
           <p><TelegramButton /></p>
