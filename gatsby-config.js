@@ -35,6 +35,12 @@ module.exports = {
         ]
       }
     },
-    'gatsby-plugin-netlify-cms'
+    'gatsby-plugin-netlify-cms',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-127424140-1"
+      }
+    }
   ],
 }

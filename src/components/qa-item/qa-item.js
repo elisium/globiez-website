@@ -14,10 +14,10 @@ class QAItem extends Component {
     }
 
     render(props) {
-        const { q, a } = this.props;
+        const { q, a, height } = this.props;
         const { open } = this.state;
         return (<div
-            className={`${styles.main} ${open ? styles.open : ""}`}
+            className={`${styles.main} ${open ? styles.open : styles.closed}`}
         >
             <h3
                 className={styles.title}
@@ -25,7 +25,7 @@ class QAItem extends Component {
             >
                 {q}
             </h3>
-            <p className={styles.answer}>{a}</p>
+            <div className={styles.answer} style={{ maxHeight: height }}>{a}</div>
         </div>);
     }
 }

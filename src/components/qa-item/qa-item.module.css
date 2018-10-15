@@ -21,12 +21,11 @@
 }
 
 .answer {
-    max-height: 0;
     overflow: hidden;
     transition: all linear 300ms;
     margin-top: 9px;
 }
 
-.open .answer {
-    max-height: 235px;
+.closed .answer {
+    max-height: 0 !important;
 }

@@ -15,7 +15,7 @@ const Footer = ({ children }) => (
                 </div>
                 <div className={`col col-8-of-12 col-4-of-8 ${styles.right}`}>
                     <p>Email: <a href="mailto:hello@globiez.com">hello@globiez.com</a></p>
-                    <p>Read our <Link to="/terms-and-conditions/">Terms & Conditions</Link></p>
+                    <p>Read our <Link to="/privacy-terms/">Privacy Terms</Link></p>
                 </div>
             </div>
         </div>
